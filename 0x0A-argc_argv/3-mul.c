@@ -7,7 +7,6 @@
  *
  * Return: the int converted from the string
  */
-
 int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
@@ -18,6 +17,9 @@ int _atoi(char *s)
 	len = 0;
 	f = 0;
 	digit = 0;
+
+	while (s[len] != '\0')
+		len++;
 
 	while (i < len && f == 0)
 	{
@@ -51,7 +53,6 @@ int _atoi(char *s)
  *
  * Return: 0 (Success), 1 (Error)
  */
-
 int main(int argc, char *argv[])
 {
 	int result, num1, num2;
